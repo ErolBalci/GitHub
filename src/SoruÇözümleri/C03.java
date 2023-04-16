@@ -28,7 +28,7 @@ public class C03 {
         int bitiş = scanner.nextInt();
         if (başlangıç > bitiş) {
             System.out.println("Başlangıç indexi bitiş indexinden büyük olmamalı");
-        } else if (kelime.length() - 1 < başlangıç || bitiş > kelime.length() - 1) {
+        } else if (0 <= başlangıç || bitiş <= kelime.length() - 1) {
             System.out.println("Girilen index kelimenin sınırları içinde olmalı");
 
         } else {
